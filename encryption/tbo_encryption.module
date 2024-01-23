@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains encryption.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function encryption_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the encryption module.
+    case 'help.page.encryption':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('TBO encrption connect KMS AWS') . '</p>';
+      return $output;
+
+    default:
+  }
+}

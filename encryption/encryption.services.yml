@@ -1,0 +1,12 @@
+services:
+  encryption.v2_0.encryption_rest_logic:
+    class: Drupal\encryption\Services\v2_0\EncryptionRestLogic
+    arguments: [ '@encryption.v2_0.encrypt']
+
+  encryption.v2_0.encrypt:
+    class: Drupal\encryption\Services\v2_0\Encrypt\Encrypt
+    arguments: [ '@encryption.v2_0.encrypt_kms_factory']
+
+  encryption.v2_0.encrypt_kms_factory:
+    class: Drupal\encryption\Services\v2_0\Encrypt\EncryptKmsFactory
+    arguments: ['@config.factory', '@?tbo_payment.v2_0.payment_utils_services']

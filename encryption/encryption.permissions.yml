@@ -1,0 +1,3 @@
+administer connection kms aws:
+  title: 'Administer connection to KMS services AWS'
+  restrict access: TRUE

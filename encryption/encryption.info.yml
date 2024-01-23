@@ -1,0 +1,5 @@
+name: Encryption
+type: module
+description: Modulo con funcionalidades de conexión a servicio KMS de AWS y ejecución de cifrado y descifrado de datos
+package: Security
+core_version_requirement: ^9 || ^10

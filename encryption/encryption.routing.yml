@@ -1,0 +1,19 @@
+encryption.encrypt_settings:
+  path: '/admin/config/app/config/encrypt_settings'
+  defaults:
+    _form: '\Drupal\encryption\Form\EncryptionSettingsForm'
+    _title: 'Configuración para conexión a servicio KMS de AWS'
+  requirements:
+    _permission: 'administer connection kms aws'
+  options:
+    _admin_route: TRUE
+  
+encryption.decrypt_form:
+  path: '/admin/config/app/config/decryption-form'
+  defaults:
+    _form: '\Drupal\encryption\Form\DecryptionForm'
+    _title: 'Formulario para descifrado con servicio KMS de AWS'
+  requirements:
+    _permission: 'administer connection kms aws'
+  options:
+    _admin_route: TRUE

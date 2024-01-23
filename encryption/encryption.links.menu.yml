@@ -1,0 +1,11 @@
+encryption.encrypt:
+  title: 'Configuración para conexión a servicio KMS de AWS'
+  route_name: encryption.encrypt_settings
+  description: 'Permite recuperar las llaves para el cifrado asimétrico de datos'
+  weight: 99
+
+encryption.decrypt_form:
+  title: 'Formulario para descifrado con servicio KMS de AWS'
+  route_name: encryption.decrypt_form
+  description: 'Permite realizar pruebas de descifrado'
+  weight: 99
